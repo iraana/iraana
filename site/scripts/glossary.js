@@ -35,4 +35,4 @@ glossaryEnteries.forEach(e => {
 
   main.appendChild(dl);
 
-  //https://chatgpt.com/share/682e55c9-45b0-8002-8ccf-a7b5d0513ea3
+  //I used ChatGPT to comlete a lab https://chatgpt.com/share/682e55c9-45b0-8002-8ccf-a7b5d0513ea3
