@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .width-wrap {
+    max-width: 960px;
+    margin: 0 auto 3em;
+    padding: 0 2em 2em; 
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: none;
+  }
+
+  footer {
+    width: clamp(300px, 50vw, 890px);
+    margin: 3em auto 2em;                
+    border: none;                        
+    border-bottom: 3px dotted #2e4834;   
+  }
+
+  dt::after {
+    content: ":";
+  }
