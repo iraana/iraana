@@ -25,14 +25,37 @@
     <main>
       <section id="bio">
         <h1>About Me</h1>
+        <figure>
+          <a href="images/myself.jpg" target="_blank">
+            <img
+              src="images/thumbnail-300.png"
+              srcset="images/thumbnail-150.png 150w, images/thumbnail-300.png 300w"
+              sizes="(max-width: 500px) 150px, 300px"
+              alt="A photo of me">
+            <figcaption>Click to view the original picture</figcaption>
+          </a>
+        </figure>
+        
         <p>I've always loved animals. Ever since I was little I dreamed of becoming a vet or owning a pet store</p>
         <p>Growing up, I had all kinds of pets — dogs, cats, a turtle, hamsters, little parrot and ever a lizard ( I caught it outside but my parents didn't let me keep it) 🐶🐱🐢🦜. I spent hours taking care of them and learning how animals think and feel. <br>They’ve always been my favorite companions and friends.</p>
-
-        <h2>My Favourite Things</h2>
-        <a href="https://cdn-icons-png.flaticon.com/512/6616/6616210.png" target="_blank">
-            <img src="images/logo.png" alt="Australian Shepherd Logo" width="160">
-        </a>
         
+      </section>
+      
+
+      <section id="working-with-figures">
+        <h2>My Favourite Things</h2>
+        <figure>
+        <a href="https://cdn-icons-png.flaticon.com/512/6616/6616210.png" target="_blank">
+            <img 
+              src="images/logo.png" 
+              alt="Australian Shepherd Logo" 
+              width="160">
+        </a>
+        <figcaption>My favourite dog breed — Australian Shepherd</figcaption>
+        </figure>
+      </section>
+        
+      <section id="top-animals">
         <h3>Top 3 Favourite Animals</h3>
           <ol>
             <li>🦊 Fox</li>
@@ -40,6 +63,27 @@
             <li>🐬 Dolphin</li>
             <li>🐶 Golden Retriever</li>
           </ol>
+      </section>
+
+      <section id="embedding-external-content">
+        <h3>Public Domain Audiobook</h3>
+        <audio controls>
+          <source src="https://www.archive.org/download/cbc29_dogs_2101_librivox/cbc29_03_various_128kb.mp3" type="audio/mpeg">
+          <p>Your browser does not support the audio.
+          <a href="https://www.archive.org/download/cbc29_dogs_2101_librivox/cbc29_03_various_128kb.mp3" download>Click here to download the audiobook.</a> <!-- Added download attribute for auto downloading the audio on click-->
+          </p>
+        </audio>
+
+        <h3>YouTube Video</h3>
+        <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/JJVFSWHZYjY?si=xM8d85UzndG6kq2w" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+          <p>iframe is not supported in your browser</p>
+        </iframe>
+
       </section>
 
       <section id="haiku">
@@ -61,6 +105,17 @@
             <cite> &mdash; <span class="author">Anatole France</span></cite>
           </blockquote>
         <p> &copy; 2025 <a href="mailto:24048851@saultcollege.ca?subject=Message%20from%20CSD112%20Website"> Iryna Nazar</a></p>
+
+        <section id="image-support">
+          <picture>
+            <source srcset="images/sc-logo/sc-logo.svg" type="image/svg+xml" width="70">
+            <img 
+              src="images/sc-logo/sc-logo.png"
+              srcset="images/sc-logo/sc-logo_105.png 1.5x, images/sc-logo/sc-logo_140.png 2x"
+              alt="Sault College logo">
+          </picture>
+        </section>
+        
     </footer>
 
     <a href="#top" title="Back to top">◤</a>
