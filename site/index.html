@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="Iryna Nazar">
@@ -11,6 +12,7 @@
  
 
 </head>
+
 <body>
   <div class="width-wrap">
 
@@ -20,6 +22,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="links.html">Links</a></li>
           <li><a href="glossary.html">Glossary</a></li>
+          <li><a href="survey.html">Survey</a></li>
         </ul>
       </nav>
     </header>
@@ -27,46 +30,181 @@
     <main>
       <section id="bio">
         <h1>About Me</h1>
-        <p>I've always loved animals. Ever since I was little I dreamed of becoming a vet or owning a pet store</p>
-        <p>Growing up, I had all kinds of pets — dogs, cats, a turtle, hamsters, little parrot and ever a lizard ( I caught it outside but my parents didn't let me keep it) 🐶🐱🐢🦜. I spent hours taking care of them and learning how animals think and feel. <br>They’ve always been my favorite companions and friends.</p>
+        <figure>
+          <a href="images/myself.jpg" target="_blank">
+            <img src="images/thumbnail-300.png" srcset="images/thumbnail-150.png 150w, images/thumbnail-300.png 300w"
+              sizes="(max-width: 500px) 150px, 300px" alt="A photo of me">
+            <figcaption>Click to view the original picture</figcaption>
+          </a>
+        </figure>
 
+        <p>I've always loved animals. Ever since I was little I dreamed of becoming a vet or owning a pet store</p>
+        <p>Growing up, I had all kinds of pets — dogs, cats, a turtle, hamsters, little parrot and ever a lizard ( I
+          caught it outside but my parents didn't let me keep it) 🐶🐱🐢🦜. I spent hours taking care of them and
+          learning how animals think and feel. <br>They’ve always been my favorite companions and friends.</p>
+
+      </section>
+
+
+      <section id="making-a-table">
+        <table>
+          <caption>Table 1. Current Courses</caption>
+          <thead>
+            <tr>
+              <th scope="col" rowspan="2">Term</th>
+              <th scope="col" colspan="2">Course</th>
+              <th scope="col" rowspan="2">Hrs/Week</th>
+            </tr>
+            <tr>
+              <th scope="col">Code</th>
+              <th scope="col">Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="rowgroup" rowspan="6">Fall</th>
+              <td scope="row">CSD105</td>
+              <td>Python</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td scope="row">CMM115</td>
+              <td>Communications I</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td scope="row">CSD120</td>
+              <td>Introduction to Web Development</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td scope="row">CSO104</td>
+              <td>Introduction to Operating Systems and LAN</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td scope="row">MTH122</td>
+              <td>Computer Mathematics</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td scope="row">TNY130</td>
+              <td>Technology in Society</td>
+              <td>2</td>
+            </tr>
+            <tr>
+              <th scope="rowgroup" rowspan="5">Winter</th>
+              <td scope="row">CSA103</td>
+              <td>Business Applications I</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td scope="row">CSD102</td>
+              <td>Programming Using C++</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td scope="row">CSD212</td>
+              <td>Web Scripting Languages</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td scope="row">CSO102</td>
+              <td>Introduction to Linux</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td scope="row">CST104</td>
+              <td>PC Hardware and Networking</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="3">Total</th>
+              <td>41</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+
+      <section id="working-with-figures">
         <h2>My Favourite Things</h2>
-        <a href="https://cdn-icons-png.flaticon.com/512/6616/6616210.png" target="_blank">
+        <figure>
+          <a href="https://cdn-icons-png.flaticon.com/512/6616/6616210.png" target="_blank">
             <img src="images/logo.png" alt="Australian Shepherd Logo" width="160">
-        </a>
-        
+          </a>
+          <figcaption>My favourite dog breed — Australian Shepherd</figcaption>
+        </figure>
+      </section>
+
+      <section id="top-animals">
         <h3>Top 3 Favourite Animals</h3>
-          <ol>
-            <li>🦊 Fox</li>
-            <!-- Found me! -->
-            <li>🐬 Dolphin</li>
-            <li>🐶 Golden Retriever</li>
-          </ol>
+        <ol>
+          <li>🦊 Fox</li>
+          <!-- Found me! -->
+          <li>🐬 Dolphin</li>
+          <li>🐶 Golden Retriever</li>
+        </ol>
+      </section>
+
+      <section id="embedding-external-content">
+        <h3>Public Domain Audiobook</h3>
+        <audio controls>
+          <source src="https://www.archive.org/download/cbc29_dogs_2101_librivox/cbc29_03_various_128kb.mp3"
+            type="audio/mpeg">
+          <p>Your browser does not support the audio.
+            <a href="https://www.archive.org/download/cbc29_dogs_2101_librivox/cbc29_03_various_128kb.mp3"
+              download>Click here to download the audiobook.</a>
+            <!-- Added download attribute for auto downloading the audio on click-->
+          </p>
+        </audio>
+
+        <h3>YouTube Video</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JJVFSWHZYjY?si=xM8d85UzndG6kq2w"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+          <p>iframe is not supported in your browser</p>
+        </iframe>
+
       </section>
 
       <section id="haiku">
         <h3>Haiku</h3>
         <p>
-            wing-worn geese … <br>
-            this urge to leave home <br>
-            to find home <br>
+          wing-worn geese … <br>
+          this urge to leave home <br>
+          to find home <br>
           <cite>by <span class="author">Chen-ou Liu</span></cite>
         </p>
       </section>
-     
+
     </main>
 
     <footer>
+
         <hr>
         <blockquote>
             “Until one has loved an animal, a part of one’s soul remains unawakened.”<br>
             <cite> &mdash; <span class="author">Anatole France</span></cite>
           </blockquote>
         <p> &copy; 2025 <a href="mailto:24048851@saultcollege.ca?subject=Message%20from%20CSD112%20Website"> Iryna Nazar</a></p>
+
+        <section id="image-support">
+          <picture>
+            <source srcset="images/sc-logo/sc-logo.svg" type="image/svg+xml" width="70">
+            <img 
+              src="images/sc-logo/sc-logo.png"
+              srcset="images/sc-logo/sc-logo_105.png 1.5x, images/sc-logo/sc-logo_140.png 2x"
+              alt="Sault College logo">
+          </picture>
+        </section>
     </footer>
 
     <a href="#top" title="Back to top">◤</a>
   </div>
 </body>
-</html>
 
+</html>
