@@ -2,12 +2,20 @@
     box-sizing: border-box;
   }
 
+  body {
+    background-color: #E7E6DB;  
+    color: #3A3B47;             
+    font-family: Arial, sans-serif;
+  }
+
   .width-wrap {
+    background-color: #A3A56E; 
     max-width: 960px;
     margin: 0 auto 3em;
     padding: 0 2em 2em; 
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-top: none;
+    position: relative;
   }
 
   footer {
@@ -20,3 +28,121 @@
   dt::after {
     content: ":";
   }
+
+  header {
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    margin-left: -2em; 
+    margin-right: -2em; 
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  header nav {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    padding-left: 0;  
+    padding-right: 0;
+  }
+
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  header nav ul li {
+    display: inline;
+  }
+
+  header nav ul li a {
+    display: inline-block; 
+    border-top: 4px solid transparent;
+    margin-top: -4px;  
+    padding: 1em 1em 0.5em 1em;  
+    color: #7B3F32; 
+    transition: border-color 0.5s ease;
+  }
+
+  header nav ul li a:hover, 
+  header nav ul li a:focus {
+    border-top-color: #7B3F32;  
+    font-weight: bold;   
+  }
+
+  h1, h2, h3 {
+    color: #7B3F32;
+  }
+
+  a {
+    color: #7A6F58;
+  }
+
+  a:hover {
+    color: #7B3F32;
+    font-weight: bold;  
+  }
+
+  ::selection {
+    background-color: #D9E4CD; 
+    color: #3A3B47;             
+  }
+
+  table th, 
+  table td {
+    padding: 0.3em 1em;  
+  }
+
+  thead th,
+  tfoot th,
+  tbody th {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  tbody td,
+  tfoot td {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  tbody tr:nth-child(even) td {
+    background-color: rgba(255, 255, 255, 0.15);
+  }
+
+  /* I added this because in your picture total cell was the same color as header cells, 
+  and because i had to apply a background with an alpha value of 0.05 to all data cells before i added this to fix the color */
+  tfoot tr:nth-child(odd) td {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+  }
+
+  label:has(input[type="radio"]),
+  label:has(input[type="checkbox"]) {
+    display: inline;
+    font-weight: normal;
+  }
+
+  button[type="submit"],
+  input[type="submit"] {
+    border: none;
+    padding: 1em 3em;
+    background-color: #7B3F32; 
+    color: #A3A56E;
+    font-weight: bold;
+  }
+
+  button[type="submit"]:hover,
+  input[type="submit"]:hover {
+    background-color: #5A2C22; 
+  }
+
+  /* in our case textarea can't be invalid*/
+  input:invalid,
+  select:invalid,
+  textarea:invalid {
+    background-color: #ef9d9d;    
+  }
+
+  
