@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="Iryna Nazar">
-  <meta name="description" content="A personal website sharing my love for animals, my favorite quote and a haiku.">
-  <title>Home</title>
+  <meta name="description" content="Personal survey">
+  <title>Survey</title>
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
 
 </head>
 
@@ -34,37 +36,27 @@
             </p>
 
             <p>
-<label for="name_field">What is your name? <abbr title="required" aria-label="required">*</abbr></label>
-                <input type="text" id="name_field" name="name_field" required>
+              <label for="name_field">What is your name? <abbr title="required" aria-label="required">*</abbr></label>
+              <input type="text" id="name_field" name="name_field" required>
             </p>
 
             <p>
-                <label for="email_field">
-                    <span>What is your email?</span>
-                    <strong><span aria-label="required">*</span></strong>
-                </label>
-                <input type="email" id="email_field" name="email_field" required>
+              <label for="email_field">What is your email? <abbr title="required" aria-label="required">*</abbr></label>
+              <input type="email" id="email_field" name="email_field" required>
             </p>
 
             <p>
-                <label for="best_whole_number">
-                  <span>Which whole number is best?</span>
-                </label>
+                <label for="best_whole_number">Which whole number is best?</label>
                 <input type="number" id="best_whole_number" name="best_whole_number" min="0" step="1">
             </p>
 
             <p>
-                <label for="best_day">
-                  <span>Which day is best?</span>
-                </label>
+                <label for="best_day">Which day is best?</label>
                 <input type="date" id="best_day" name="best_day">
             </p>
 
             <p>
-                <label for="best_bear">
-                  <span>Which bear is best?</span>
-                  <strong><span aria-label="required">*</span></strong>
-                </label>
+                <label for="best_bear">Which bear is best? <abbr title="required" aria-label="required">*</abbr></label>
                 <select id="best_bear" name="best_bear" required>
                   <option value="" selected>&nbsp;</option>
                   <option value="black">Black</option>
@@ -98,9 +90,7 @@
             </fieldset>
 
             <p>
-                <label for="life_meaning">
-                    <span>What is the meaning of life?</span>
-                </label>
+                <label for="life_meaning">What is the meaning of life?</label>
                 <textarea id="life_meaning" name="life_meaning" rows="5" cols="50" placeholder="Enter the correct answer here"></textarea>
             </p>
 
